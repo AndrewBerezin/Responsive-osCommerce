@@ -62,6 +62,18 @@
         } else {
           echo '[[1]]';
         }
+// BOF oscommerce-ru
+        $sqlpluginsdir = 'sql/';
+        foreach (glob($sqlpluginsdir . 'mysql*.sql') as $sql_file) {
+          echo '<br />Processing Plugin: ' . $sqlpluginsdir . $sql_file . '<br />';
+          osc_db_install($db['DB_DATABASE'], $sql_file);
+          if ($db_error != false) {
+            echo '[[0|' . $db_error . ']]';
+          } else {
+            echo '[[1]]';
+          }
+        }
+// EOF oscommerce-ru
 
         exit;
         break;
