@@ -11,9 +11,11 @@
 */
 
 // look in your $PATH_LOCALE/locale directory for available locales..
-// on RedHat6.0 I used 'en_US'
-// on FreeBSD 4.0 I use 'en_US.ISO_8859-1'
-// this may not work under win32 environments..
+// Array examples which should work on all servers:
+// 'en_US.UTF-8', 'en_US.UTF8', 'enu_usa'
+// 'en_GB.UTF-8', 'en_GB.UTF8', 'eng_gb'
+// 'en_AU.UTF-8', 'en_AU.UTF8', 'ena_au'
+
 setlocale(LC_TIME, 'ru_RU.UTF-8');
 define('DATE_FORMAT_SHORT', '%d/%m/%Y');  // this is used for strftime()
 define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
@@ -303,3 +305,5 @@ define('WARNING_NO_FILE_UPLOADED', 'Предупреждение: Новые ф�
 // bootstrap helper
 define('MODULE_CONTENT_BOOTSTRAP_ROW_DESCRIPTION', '<p>Ширина "Содержимого" может быть 12 или меньше, в каждом столбце для каждой строки.</p><p>12/12 = 100% ширины, 6/12 = 50% ширины, 4/12 = 33% ширины.</p><p>Сумма всех столбцов в одной строке должна быть равно 12 (например: 3 бокса из 4 столбцов каждая, 1 бокс из 12 столбцов и так далее).</p>');
 
+// seo helper
+define('PLACEHOLDER_COMMA_SEPARATION', 'Должно, Быть, Разделено, Запятой');

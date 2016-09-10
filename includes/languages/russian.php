@@ -12,10 +12,10 @@
 
 // look in your $PATH_LOCALE/locale directory for available locales
 // or type locale -a on the server.
-// Examples:
-// on RedHat try 'en_US'
-// on FreeBSD try 'en_US.ISO_8859-1'
-// on Windows try 'en', or 'English'
+// Array examples which should work on all servers:
+// 'en_US.UTF-8', 'en_US.UTF8', 'enu_usa'
+// 'en_GB.UTF-8', 'en_GB.UTF8', 'eng_gb'
+// 'en_AU.UTF-8', 'en_AU.UTF8', 'ena_au'
 @setlocale(LC_TIME, 'ru_RU.UTF-8');
 
 define('DATE_FORMAT_SHORT', '%d/%m/%Y');  // this is used for strftime()
@@ -50,34 +50,24 @@ mb_internal_encoding('UTF-8');
 // page title
 define('TITLE', STORE_NAME);
 
-// header text in includes/header.php
-define('HEADER_TITLE_CREATE_ACCOUNT', 'Регистрация');
+// text in includes/modules/downloads.php
 define('HEADER_TITLE_MY_ACCOUNT', 'Мои данные');
-define('HEADER_TITLE_CART_CONTENTS', 'Корзина');
-define('HEADER_TITLE_CHECKOUT', 'Оформить заказ');
-define('HEADER_TITLE_TOP', 'Магазин');
+
+// text in includes/application_top.php
+define('HEADER_TITLE_TOP', '<i class="fa fa-home"><span class="sr-only">Магазин</span></i>');
 define('HEADER_TITLE_CATALOG', 'Каталог');
-define('HEADER_TITLE_LOGOFF', 'Выход');
-define('HEADER_TITLE_LOGIN', 'Мои данные');
 
 // text for gender
-define('MALE', 'Мужской');
-define('FEMALE', 'Женский');
-define('MALE_ADDRESS', 'Г-н');
-define('FEMALE_ADDRESS', 'Г-жа');
-
-// text for date of birth example
-define('DOB_FORMAT_STRING', 'dd/mm/yyyy');
+define('MALE', 'М<span class="hidden-xs">ужской</span>');
+define('FEMALE', 'Ж<span class="hidden-xs">енский</span>');
 
 // checkout procedure text
 define('CHECKOUT_BAR_DELIVERY', 'Адрес доставки');
 define('CHECKOUT_BAR_PAYMENT', 'Способ оплаты');
 define('CHECKOUT_BAR_CONFIRMATION', 'Подтверждение');
-define('CHECKOUT_BAR_FINISHED', 'Заказ оформлен!');
 
 // pull down default text
 define('PULL_DOWN_DEFAULT', 'Выберите');
-define('TYPE_BELOW', 'Выбор ниже');
 
 // javascript messages
 define('JS_ERROR', 'Ошибки при заполнении формы!\n\nИсправьте пожалуйста:\n\n');
@@ -87,16 +77,7 @@ define('JS_REVIEW_RATING', '* Оцените, пожалуйста, продук
 
 define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Выберите метод оплаты для Вашего заказа.\n');
 
-define('JS_ERROR_SUBMITTED', 'Эта форма уже заполнена. Нажимайте Ok.');
-
 define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Выберите, пожалуйста, метод оплаты для Вашего заказа.');
-
-define('CATEGORY_COMPANY', 'Организация');
-define('CATEGORY_PERSONAL', 'Ваши персональные данные');
-define('CATEGORY_ADDRESS', 'Ваш адрес');
-define('CATEGORY_CONTACT', 'Контактная информация');
-define('CATEGORY_OPTIONS', 'Рассылка');
-define('CATEGORY_PASSWORD', 'Ваш пароль');
 
 define('ENTRY_COMPANY', 'Название компании:');
 define('ENTRY_COMPANY_TEXT', '');
@@ -164,11 +145,8 @@ define('FORM_REQUIRED_INFORMATION', '* Обязательно для запол�
 
 // constants for use in tep_prev_next_display function
 define('TEXT_RESULT_PAGE', 'Страницы:');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> позиций)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> заказов)');
-define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> отзывов)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> новинок)');
-define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Показано <b>%d</b> - <b>%d</b> (всего <b>%d</b> специальных предложений)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Показано <strong>%d</strong> - <strong>%d</strong> (всего <strong>%d</strong> позиций)');
+define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Показано <strong>%d</strong> - <strong>%d</strong> (всего <strong>%d</strong> отзывов)');
 
 define('PREVNEXT_TITLE_FIRST_PAGE', 'Первая страница');
 define('PREVNEXT_TITLE_PREVIOUS_PAGE', 'предыдущая');
@@ -183,28 +161,18 @@ define('PREVNEXT_BUTTON_NEXT', 'Следующая');
 define('PREVNEXT_BUTTON_LAST', 'ПОСЛЕДНЯЯ');
 
 define('IMAGE_BUTTON_ADD_ADDRESS', 'Добавить адрес');
-define('IMAGE_BUTTON_ADDRESS_BOOK', 'Адресная книга');
 define('IMAGE_BUTTON_BACK', 'Назад');
 define('IMAGE_BUTTON_BUY_NOW', 'Купить сейчас');
 define('IMAGE_BUTTON_CHANGE_ADDRESS', 'Изменить адрес');
 define('IMAGE_BUTTON_CHECKOUT', 'Оформить заказ');
 define('IMAGE_BUTTON_CONFIRM_ORDER', 'Подтвердить Заказ');
 define('IMAGE_BUTTON_CONTINUE', 'Продолжить');
-define('IMAGE_BUTTON_CONTINUE_SHOPPING', 'Вернуться в магазин');
 define('IMAGE_BUTTON_DELETE', 'Удалить');
-define('IMAGE_BUTTON_EDIT_ACCOUNT', 'Редактировать учетные данные');
-define('IMAGE_BUTTON_HISTORY', 'История заказов');
 define('IMAGE_BUTTON_LOGIN', 'Войти');
 define('IMAGE_BUTTON_IN_CART', 'Добавить в Корзину');
-define('IMAGE_BUTTON_NOTIFICATIONS', 'Уведомления');
-define('IMAGE_BUTTON_QUICK_FIND', 'Быстрый поиск');
-define('IMAGE_BUTTON_REMOVE_NOTIFICATIONS', 'Удалить уведомления');
 define('IMAGE_BUTTON_REVIEWS', 'Отзывы');
 define('IMAGE_BUTTON_SEARCH', 'Искать');
-define('IMAGE_BUTTON_SHIPPING_OPTIONS', 'Способы доставки');
-define('IMAGE_BUTTON_TELL_A_FRIEND', 'Написать другу');
 define('IMAGE_BUTTON_UPDATE', 'Обновить');
-define('IMAGE_BUTTON_UPDATE_CART', 'Пересчитать');
 define('IMAGE_BUTTON_WRITE_REVIEW', 'Написать отзыв');
 
 define('SMALL_IMAGE_BUTTON_DELETE', 'Удалить');
@@ -213,33 +181,15 @@ define('SMALL_IMAGE_BUTTON_VIEW', 'Смотреть');
 define('SMALL_IMAGE_BUTTON_BUY', 'Купить');
 
 define('ICON_ARROW_RIGHT', 'Перейти');
-define('ICON_CART', 'В корзину');
-define('ICON_ERROR', 'Ошибка');
-define('ICON_SUCCESS', 'Выполнено');
-define('ICON_WARNING', 'Внимание');
-
-define('TEXT_GREETING_PERSONAL', 'Добро пожаловать <span class="greetUser">%s!</span> Вы хотите посмотреть какие <a href="%s"><u>новые товары</u></a> поступили в наш магазин?');
-define('TEXT_GREETING_PERSONAL_RELOGON', '<small>Если Вы не %s, пожалуйста <a href="%s"><u>зарегистрируйтесь </u></a> и введите Вашу личную информацию.</small>');
-define('TEXT_GREETING_GUEST', 'Добро пожаловать <span class="greetUser">уважаемый гость</span><br> Если Вы наш постоянный клиент, <a href="%s"><u>введите Ваши персональные данные</u></a> для входа. Если Вы у нас впервые и хотите сделать покупки, Вам необходимо <a href="%s"><u>зарегистрироваться</u></a>.');
 
 define('TEXT_SORT_PRODUCTS', 'Сортировка товаров ');
 define('TEXT_DESCENDINGLY', 'по убыванию');
 define('TEXT_ASCENDINGLY', 'по возрастанию');
 define('TEXT_BY', ' по ');
 
-define('TEXT_REVIEW_BY', 'к %s');
-define('TEXT_REVIEW_WORD_COUNT', '%s слова');
-define('TEXT_REVIEW_RATING', 'Рейтинг: %s [%s]');
-define('TEXT_REVIEW_DATE_ADDED', 'Дата добавления: %s');
 define('TEXT_NO_REVIEWS', 'К настоящему времени нет отзывов, Вы можете стать первым.');
 
-define('TEXT_NO_NEW_PRODUCTS', 'Сегодня нет новых товаров.');
-
 define('TEXT_UNKNOWN_TAX_RATE', 'Налоговая ставка неизвестна');
-
-define('TEXT_REQUIRED', '<span class="errorText">Обязательно</span>');
-
-define('ERROR_TEP_MAIL', '<font face="Verdana, Arial" size="2" color="#ff0000"><b><small>ОШИБКА:</small> Невозможно отправить email через сервер SMTP. Проверьте, пожалуйста, Ваши установки php.ini и если необходимо, скорректируйте сервер SMTP.</b></font>');
 
 define('TEXT_CCVAL_ERROR_INVALID_DATE', 'Вы указали неверную дату истечения срока действия кредитной карточки.<br>Попробуйте ещё раз.');
 define('TEXT_CCVAL_ERROR_INVALID_NUMBER', 'Вы указали неверный номер кредитной карточки.<br>Попробуйте ещё раз.');
