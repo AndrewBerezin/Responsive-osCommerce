@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_ADMIN_DASHBOARD_REVIEWS_TITLE', 'Отзывы');
+define('MODULE_ADMIN_DASHBOARD_REVIEWS_TITLE', 'Отзывы о товарах');
 define('MODULE_ADMIN_DASHBOARD_REVIEWS_DESCRIPTION', 'Показать последние отзывы');
 define('MODULE_ADMIN_DASHBOARD_REVIEWS_REVIEWER', 'Автор');
 define('MODULE_ADMIN_DASHBOARD_REVIEWS_DATE', 'Дата');

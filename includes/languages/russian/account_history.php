@@ -5,7 +5,7 @@
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2003 osCommerce
+  Copyright (c) 2016 osCommerce
 
   Released under the GNU General Public License
 */
@@ -26,3 +26,4 @@ define('TEXT_VIEW_ORDER', 'Смотреть заказ');
 
 define('TEXT_NO_PURCHASES', 'К сожалению, Вы ещё ничего не купили в нашем магазине.');
 
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Показано с <strong>%d</strong> по <strong>%d</strong> (из <strong>%d</strong> заказов)');

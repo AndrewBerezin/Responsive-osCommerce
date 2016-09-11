@@ -13,5 +13,5 @@
   define('MODULE_CONTENT_PRODUCT_INFO_REVIEWS_TITLE', 'Отзывы о товаре');
   define('MODULE_CONTENT_PRODUCT_INFO_REVIEWS_DESCRIPTION', 'Показывать блок отзывов в карточке товара.');
   
-  define('MODULE_CONTENT_PRODUCT_INFO_REVIEWS_TEXT_RATED', 'Rated %s by <cite title="%s">%s</cite>');
+  define('MODULE_CONTENT_PRODUCT_INFO_REVIEWS_TEXT_RATED', 'Рейтинг %s <cite title="%s">%s</cite>');
 

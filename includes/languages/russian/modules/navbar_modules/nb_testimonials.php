@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_NAVBAR_Отзывы_TITLE', 'Отзывы');
-  define('MODULE_NAVBAR_Отзывы_DESCRIPTION', 'Show Отзывы Link in Navbar.');
+  define('MODULE_NAVBAR_TESTIMONIALS_TITLE', 'Отзывы');
+  define('MODULE_NAVBAR_TESTIMONIALS_DESCRIPTION', 'Show Отзывы Link in Navbar.');
 
-  define('MODULE_NAVBAR_Отзывы_PUBLIC_TEXT', '<li><a href="' . tep_href_link('Отзывы.php') . '"><i class="fa fa-pencil-square-o"></i><span class="hidden-sm"> Отзывы</span></a></li>');
+  define('MODULE_NAVBAR_TESTIMONIALS_PUBLIC_TEXT', '<li><a href="' . tep_href_link('testimonials.php') . '"><i class="fa fa-pencil-square-o"></i><span class="hidden-sm"> Отзывы</span></a></li>');

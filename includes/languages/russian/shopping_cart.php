@@ -20,3 +20,6 @@ define('OUT_OF_STOCK_CANT_CHECKOUT', 'Товары, выделенные ' . STO
 define('OUT_OF_STOCK_CAN_CHECKOUT', 'Товары, выделенные ' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . ' имеются на нашем складе в недостаточном для Вашего заказа количестве.<br>Тем не менее, Вы можете купить их и проверить количество имеющихся в наличии для поэтапной доставки в процессе выполнения Вашего заказа.');
 
 define('TEXT_ALTERNATIVE_CHECKOUT_METHODS', '- ИЛИ -');
+
+define('CART_BUTTON_UPDATE', '');
+define('CART_BUTTON_REMOVE', '');

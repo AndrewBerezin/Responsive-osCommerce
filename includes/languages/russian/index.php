@@ -10,11 +10,9 @@
   Released under the GNU General Public License
 */
 
-define('TEXT_MAIN', '<font color="#f0000"><b>' . PROJECT_VERSION . ' русская версия</b></font>.<br>Перевод - <b><a href=mailto:orders@kypi.ru><font color="blue">Александр Меновщиков</font></b></a><br>Мodified by <a href="http://www.eshop-master.com" target="_blank"><b>eShop-Master.com</b></a> и <a href="http://ecommerce-service.com" target="_blank"><b>eCommerce-Service.com</b></a>');
-define('TABLE_HEADING_NEW_PRODUCTS', 'Новинки %s');
-define('TABLE_HEADING_UPCOMING_PRODUCTS', 'Ожидается');
-define('TABLE_HEADING_DATE_EXPECTED', 'Дата поступления');
 define('HEADING_TITLE', 'Добро пожаловать в ' . STORE_NAME);
+
+define('TABLE_HEADING_NEW_PRODUCTS', 'Новинки %s');
 
 define('TEXT_NO_PRODUCTS', 'Нет ни одного товара в этой категории.');
 define('TEXT_NUMBER_OF_PRODUCTS', 'Количество товара: ');

@@ -76,7 +76,7 @@ define('BOX_HEADING_CATALOG', 'Каталог');
 define('BOX_CATALOG_CATEGORIES_PRODUCTS', 'Категории/Товары');
 define('BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES', 'Опции товаров');
 define('BOX_CATALOG_MANUFACTURERS', 'Производители');
-define('BOX_CATALOG_REVIEWS', 'Отзывы');
+define('BOX_CATALOG_REVIEWS', 'Отзывы о товарах');
 define('BOX_CATALOG_SPECIALS', 'Скидки');
 define('BOX_CATALOG_PRODUCTS_EXPECTED', 'Ожидаемые товары');
 

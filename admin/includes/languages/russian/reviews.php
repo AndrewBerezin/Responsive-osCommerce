@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Отзывы');
+define('HEADING_TITLE', 'Отзывы о товарах');
 
 define('TABLE_HEADING_PRODUCTS', 'Товар');
 define('TABLE_HEADING_RATING', 'Рейтинг');

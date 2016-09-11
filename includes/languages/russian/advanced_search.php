@@ -52,3 +52,5 @@ define('ERROR_PRICE_TO_MUST_BE_NUM', 'Поле Цена до должно сод
 define('ERROR_PRICE_TO_LESS_THAN_PRICE_FROM', 'Значение поля Цена от должно быть больше значения поля Цена до.');
 define('ERROR_INVALID_KEYWORDS', 'Поисковый запрос составлен неверно.');
 
+// text for date of birth example
+define('DOB_FORMAT_STRING', 'dd/mm/yyyy');
