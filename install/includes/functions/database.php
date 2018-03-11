@@ -24,7 +24,7 @@
 
     if ( !mysqli_connect_errno() ) {
       mysqli_set_charset($$link, 'utf8');
-      
+
       @mysqli_query($$link, 'set session sql_mode=""');
     } else {
       $db_error = mysqli_connect_error();
@@ -61,6 +61,8 @@
 
   function osc_db_install($database, $sql_file, $link = 'db_link') {
     global $$link, $db_error;
+
+    mb_internal_encoding('8bit');
 
     $db_error = false;
 
@@ -117,7 +119,7 @@
           }
 // BOF oscommerce-ru
 //        if ( (preg_match('/create/i', $next)) || (preg_match('/insert/i', $next)) || (preg_match('/drop t/i', $next)) ) {
-          if ( (preg_match('/create/i', $next)) || (preg_match('/insert/i', $next)) || (preg_match('/drop t/i', $next)) || (preg_match('/update/i', $next)) || (preg_match('/set /i', $next)) ) {
+          if ( (preg_match('/create/i', $next)) || (preg_match('/insert/i', $next)) || (preg_match('/drop t/i', $next)) || (preg_match('/update/i', $next)) || (preg_match('/set /i', $next)) || (preg_match('/alter /i', $next)) || (preg_match('/select/i', $next)) || (preg_match('/delete/i', $next)) ) {
 // EOF oscommerce-ru
             $next = '';
             $sql_array[] = substr($restore_query, 0, $i);
