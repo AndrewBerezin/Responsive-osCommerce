@@ -28,3 +28,5 @@ define('HEADING_PAYMENT_INFORMATION', 'Информация об оплате');
 define('HEADING_ORDER_COMMENTS', 'Ваши комментарии');
 
 define('TEXT_EDIT', 'Изменить');
+
+define('IMAGE_BUTTON_FINALISE_ORDER', 'Завершить и оплатить заказ');

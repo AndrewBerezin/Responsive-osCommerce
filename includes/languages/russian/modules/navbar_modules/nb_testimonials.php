@@ -13,4 +13,4 @@
   define('MODULE_NAVBAR_TESTIMONIALS_TITLE', 'Отзывы');
   define('MODULE_NAVBAR_TESTIMONIALS_DESCRIPTION', 'Show Отзывы Link in Navbar.');
 
-  define('MODULE_NAVBAR_TESTIMONIALS_PUBLIC_TEXT', '<li><a href="' . tep_href_link('testimonials.php') . '"><i class="fa fa-pencil-square-o"></i><span class="hidden-sm"> Отзывы</span></a></li>');
+  define('MODULE_NAVBAR_TESTIMONIALS_PUBLIC_TEXT', '<li><a href="' . tep_href_link('testimonials.php') . '"><i class="far fa-edit"></i><span class="hidden-sm"> Отзывы</span></a></li>');

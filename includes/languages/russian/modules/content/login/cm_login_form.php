@@ -18,3 +18,6 @@
   define('MODULE_CONTENT_LOGIN_TEXT_PASSWORD_FORGOTTEN', 'Забыли пароль? Кликните здесь.');
 
   define('MODULE_CONTENT_LOGIN_TEXT_LOGIN_ERROR', 'Ошибка: Нет такого E-Mail или не совпадает пароль.');
+
+  define('MODULE_CONTENT_LOGIN_ENTRY_EMAIL_ADDRESS_PLACEHOLDER', 'Email');
+  define('MODULE_CONTENT_LOGIN_ENTRY_PASSWORD_PLACEHOLDER', 'Пароль');

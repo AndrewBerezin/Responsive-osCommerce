@@ -54,7 +54,7 @@ define('TITLE', STORE_NAME);
 define('HEADER_TITLE_MY_ACCOUNT', 'Мои данные');
 
 // text in includes/application_top.php
-define('HEADER_TITLE_TOP', '<i class="fa fa-home"><span class="sr-only">Магазин</span></i>');
+define('HEADER_TITLE_TOP', '<i class="fas fa-home"></i><span class="sr-only">Магазин</span>');
 define('HEADER_TITLE_CATALOG', 'Каталог');
 
 // text for gender
@@ -139,9 +139,6 @@ define('ENTRY_PASSWORD_NEW', 'Новый пароль:');
 define('ENTRY_PASSWORD_NEW_TEXT', '*');
 define('ENTRY_PASSWORD_NEW_ERROR', 'Ваш Новый пароль должен содержать как минимум ' . ENTRY_PASSWORD_MIN_LENGTH . ' символов.');
 define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', 'Поля Подтвердите пароль и Новый пароль должны совпадать.');
-define('PASSWORD_HIDDEN', '--СКРЫТ--');
-
-define('FORM_REQUIRED_INFORMATION', '* Обязательно для заполнения');
 
 // constants for use in tep_prev_next_display function
 define('TEXT_RESULT_PAGE', 'Страницы:');
@@ -205,7 +202,7 @@ define('TEXT_SEARCH_PLACEHOLDER','Искать');
 
 // message for required inputs
 define('FORM_REQUIRED_INFORMATION', '<span class="fa fa-asterisk inputRequirement"></span> Обязательная информация');
-define('FORM_REQUIRED_INPUT', '<span><span class="fa fa-asterisk form-control-feedback inputRequirement"></span></span>');
+define('FORM_REQUIRED_INPUT', '<span class="form-control-feedback text-danger"><span class="fa fa-asterisk"></span></span>');
 
 // reviews
 define('REVIEWS_TEXT_RATED', 'Голосовало %s <cite title="%s" itemprop="author">%s</cite>');

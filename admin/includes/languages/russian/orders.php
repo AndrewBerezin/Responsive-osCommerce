@@ -14,6 +14,10 @@ define('HEADING_TITLE', 'Список заказов');
 define('HEADING_TITLE_SEARCH', 'Поиск по ID заказа');
 define('HEADING_TITLE_STATUS', 'Состояние:');
 
+define('TAB_TITLE_SUMMARY','Сводка');
+define('TAB_TITLE_PRODUCTS','Товары');
+define('TAB_TITLE_STATUS_HISTORY','История');
+
 define('TABLE_HEADING_COMMENTS', 'Комментарий');
 define('TABLE_HEADING_CUSTOMERS', 'Покупатели');
 define('TABLE_HEADING_ORDER_TOTAL', 'Заказ итого');
@@ -76,3 +80,5 @@ define('EMAIL_TEXT_COMMENTS_UPDATE', 'Комментарии к Вашему з�
 define('ERROR_ORDER_DOES_NOT_EXIST', 'Ошибка: Заказ не существует.');
 define('SUCCESS_ORDER_UPDATED', 'Выполнено: Заказ успешно обновлён.');
 define('WARNING_ORDER_NOT_UPDATED', 'Внимание: Изменять нечего. Заказ НЕ обновлён.');
+
+define('ENTRY_ADD_COMMENT', 'Добавить комментарий:');

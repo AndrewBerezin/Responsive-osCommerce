@@ -23,7 +23,7 @@ define('TEXT_ALL_CATEGORIES', 'Все категории');
 define('TEXT_ALL_MANUFACTURERS', 'Все производители');
 
 // seo
-if ( ($category_depth == 'top') && (!isset($HTTP_GET_VARS['manufacturers_id'])) ) {
+if ( ($category_depth == 'top') && (!isset($_GET['manufacturers_id'])) ) {
   define('META_SEO_TITLE', 'Заголовок главной страницы');
   define('META_SEO_DESCRIPTION', 'Мета-Описание главной страницы');
   /*
